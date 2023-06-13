@@ -69,7 +69,7 @@ describe("Spec - Create new project ", () => {
     await newProjectPage.clickNextBtn();
     await FunctionUtil.elementVisibilityOf(newProjectPage.LABEL_SELECTOR);
     console.log("log-start to set label that more than 50 labels...");
-    await newProjectPage.selectLabels(2);
+    await newProjectPage.selectLabels(3);
     await newProjectPage.selectMultipleTicketColumn(0, 1);
     await newProjectPage.clickSureBtn();
     await browser.wait(
@@ -85,7 +85,7 @@ describe("Spec - Create new project ", () => {
     // await REVIEW_DATA_BTN.click();
     // await FunctionUtil.elementVisibilityOf(SET_DATA_SECTION);
     // await newProjectPage.clickWizardNext();
-    await newProjectPage.selectLabels(3);
+    await newProjectPage.selectLabels(4);
     await newProjectPage.selectMultipleTicketColumn(0, 1);
     await newProjectPage.clickSureBtn();
     await browser.wait(
@@ -96,7 +96,7 @@ describe("Spec - Create new project ", () => {
 
     console.log("log-start to calculate one whole numeric column");
     await newProjectPage.clickWizardBack();
-    await newProjectPage.selectLabels(9);
+    await newProjectPage.selectLabels(10);
     await newProjectPage.selectMultipleTicketColumn(0, 1);
     await newProjectPage.clickSureBtn();
     await FunctionUtil.elementVisibilityOf(
@@ -106,7 +106,7 @@ describe("Spec - Create new project ", () => {
 
     console.log("log-start to set label to no label option");
     await newProjectPage.clickWizardBack();
-    await newProjectPage.selectLabels(0);
+    await newProjectPage.selectLabels(1);
     await newProjectPage.selectMultipleTicketColumn(0, 1);
     await newProjectPage.clickSureBtn();
     await newProjectPage.setNewLabel(New_Lable);

@@ -55,7 +55,7 @@ describe("Spec - Create new project ", () => {
     await browser.sleep(1000);
     await newProjectPage.clickNextBtn();
     await browser.sleep(1000);
-    await newProjectPage.selectLabels(2);
+    await newProjectPage.selectLabels(3);
     // Select Question Column
     await newProjectPage.selectQuestionLabels(3);
 

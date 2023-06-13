@@ -54,7 +54,7 @@ describe("Spec - create new project ", () => {
     await newProjectPage.clickNextBtn();
     await FunctionUtil.elementVisibilityOf(newProjectPage.LABEL_SELECTOR);
     // to select the no_label option
-    await newProjectPage.selectLabels(0);
+    await newProjectPage.selectLabels(1);
     await newProjectPage.selectMultipleTicketColumn(1, 7);
     await newProjectPage.selectMultipleTicketColumn(4, 7);
     await newProjectPage.clickSureBtn();
