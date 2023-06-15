@@ -13,9 +13,12 @@ import { EnvironmentsService } from './services/environments.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  showFlag: boolean = false;
+
   constructor(private titleService: Title, private env: EnvironmentsService) {}
 
   ngOnInit() {
+    this.showFlag = this.env.config.production;
     this.getTitleInfo();
   }
 
